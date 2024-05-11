@@ -1,10 +1,13 @@
+import HeroSection from './components/HeroSection';
+import ProjectsSection from './components/ProjectsSection';
+
 const App = () => {
     return (
-        <div className='container mx-auto'>
-            <h1 className='text-5xl text-slate-500'>
-                Hello World
-            </h1>
-        </div>
+        <>
+            <HeroSection />
+            <ProjectsSection />
+            <HeroSection />
+        </>
     );
 };
 
