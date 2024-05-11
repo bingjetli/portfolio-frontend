@@ -19,13 +19,20 @@ const ProjectCard = ({ data, idx, ...props }) => {
     const rotateZ = useTransform(scroll_y_progress, [0, 1], [0, (Math.random() * 15) * Math.pow(-1, idx)]);
 
     return (
-        <motion.div className='border h-screen w-full sticky top-0 flex justify-center items-center'
+        <motion.div className='h-screen w-full sticky top-0 flex justify-center items-center'
             initial="offscreen"
             ref={ref_to_this_component}
             whileInView="onscreen"
             viewport={{ amount: 1.0, once: true }}>
-            <motion.div className='inline-block w-3/4 h-1/2 bg-brandgray' style={{ rotateZ }}>
-                {title}
+            <motion.div className='w-3/4 h-1/2 bg-brandwhite shadow-md flex flex-col' style={{ rotateZ }}>
+                <div className='bg-branddark h-1/2' >
+                    &nbsp;
+                </div>
+                <div className='p-2'>
+                    <h3 className='font-bold'>
+                        {title}
+                    </h3>
+                </div>
             </motion.div>
         </motion.div>
     );

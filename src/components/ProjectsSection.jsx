@@ -28,8 +28,9 @@ const ProjectsSection = () => {
     }, []);
 
     return (
-        <motion.div className='container w-full bg-brandwhite'>
-            <motion.div className='w-full h-screen flex flex-col justify-center items-center border sticky top-0'>
+        <motion.div className='container w-full' >
+            <motion.div className='w-full h-screen flex flex-col justify-center items-center sticky top-0'
+                style={{ background: "radial-gradient(circle at top right, rgba(233, 227, 231, 1) 40%, rgba(144, 140, 138, 1) 200%)" }}>
                 <div className=''>
                     <div>Here are some of my</div>
                     <h2 className='text-4xl'>
